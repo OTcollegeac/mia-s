@@ -8,7 +8,7 @@ const publicDirectory = path.join(__dirname, "public");
 // Serve the complete website from /public, including its HTML, CSS, JavaScript, and images.
 app.use(express.static(publicDirectory));
 
-// Keep the site root convenient while preserving the existing static-page URLs.
+
 app.get("/", (req, res) => {
   res.redirect("/html/index.html");
 });
