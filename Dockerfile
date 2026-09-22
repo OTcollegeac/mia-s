@@ -5,5 +5,5 @@ COPY package*.json ./
 RUN npm install --omit=dev
 COPY . .
 
-CMD ["node", "app.js"]
+CMD ["node", "server.js"]
 EXPOSE 3000
