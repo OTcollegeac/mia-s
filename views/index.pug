@@ -1,0 +1,13 @@
+//File path: views/index.pug
+// Pug template
+html
+  head
+    // Set the title of the HTML page
+    title message
+  style 
+    include ../public/css/index.css
+
+  body
+    // Display the main heading of the page
+    include nav.pug
+    h1= message
